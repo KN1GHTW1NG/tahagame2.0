@@ -1,3 +1,4 @@
+alert("car.js loaded");
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
@@ -61,16 +62,16 @@ window.addEventListener("resize", resize);
 // ---- Player PNG ----
 const playerImg = new Image();
 // TODO later: change to local path:
-// playerImg.src = "assets/IMG_2122.png";
-playerImg.src = "https://github.com/KN1GHTW1NG/tahagame2.0/raw/refs/heads/main/assets/IMG_2029.PNG";
+// playerImg.src = "assets/IMG_2029.png";
+playerImg.src = "assets/IMG_2029.PNG";
 let playerReady = false;
 playerImg.onload = () => (playerReady = true);
 
 // ---- Obstacle PNG ----
 const obstacleImg = new Image();
 // TODO later: change to local path:
-// obstacleImg.src = "assets/IMG_2125.png";
-obstacleImg.src = "https://github.com/KN1GHTW1NG/tahagame2.0/raw/refs/heads/main/assets/IMG_2141.jpeg";
+// obstacleImg.src = "assets/IMG_2141.png";
+obstacleImg.src = "assets/IMG_2141.jpeg";
 let obstacleReady = false;
 obstacleImg.onload = () => (obstacleReady = true);
 
