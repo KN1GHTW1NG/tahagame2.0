@@ -62,7 +62,7 @@ window.addEventListener("resize", resize);
 const playerImg = new Image();
 // TODO later: change to local path:
 // playerImg.src = "assets/IMG_2122.png";
-playerImg.src = "https://github.com/KN1GHTW1NG/Surprise/raw/refs/heads/main/IMG_2120.png";
+playerImg.src = "https://github.com/KN1GHTW1NG/tahagame2.0/raw/refs/heads/main/assets/IMG_2029.PNG;
 let playerReady = false;
 playerImg.onload = () => (playerReady = true);
 
@@ -70,7 +70,7 @@ playerImg.onload = () => (playerReady = true);
 const obstacleImg = new Image();
 // TODO later: change to local path:
 // obstacleImg.src = "assets/IMG_2125.png";
-obstacleImg.src = "https://github.com/KN1GHTW1NG/Surprise/raw/refs/heads/main/IMG_2125.png";
+obstacleImg.src = "https://github.com/KN1GHTW1NG/tahagame2.0/raw/refs/heads/main/assets/IMG_2141.jpeg;
 let obstacleReady = false;
 obstacleImg.onload = () => (obstacleReady = true);
 
