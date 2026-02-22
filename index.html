@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <title>Drive to Your Surprise 💖</title>
+
+  <link rel="stylesheet" href="css/car.css" />
+</head>
+
+<body>
+
+  <div class="app" id="app" tabindex="0">
+    <!-- Loading Overlay -->
+<div class="overlay hidden" id="loading">
+  <div class="modal">
+    <h2>Starting engine… 🐾</h2>
+    <p class="small">Seatbelt on. Surprise ahead.</p>
+
+    <div class="loadBar">
+      <div class="loadFill" id="loadFill"></div>
+    </div>
+    <div class="loadPct" id="loadPct">5s</div>
+  </div>
+</div>
+
+    <header class="hud">
+      <h1>Drive to Your Surprise 💖</h1>
+      <p class="caption">Avoid the drama. Reach your destination.</p>
+
+      <div class="progress">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="percent" id="percent">0%</div>
+    </header>
+
+    <main class="stage">
+      <canvas id="game"></canvas>
+    </main>
+
+    <footer class="controls">
+      <button class="control-btn" id="leftBtn">◀</button>
+      <button class="control-btn" id="rightBtn">▶</button>
+    </footer>
+
+    <!-- Game Over Modal -->
+    <div class="overlay hidden" id="gameOver">
+      <div class="modal">
+        <h2>Oops 💥</h2>
+        <p>That car was dramatic.</p>
+        <button id="restart">Try Again</button>
+      </div>
+    </div>
+
+    <!-- Win Modal -->
+    <div class="overlay hidden" id="win">
+      <div class="modal">
+        <h2>You made it 🎉</h2>
+        <p>Destination reached. You're almost there.</p>
+        <button id="continueBtn">Continue</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/car.js" defer></script>
+
+</body>
+</html>
