@@ -128,7 +128,10 @@ document.addEventListener("keydown", (e) => {
 
 restartBtn.onclick = resetGame;
 continueBtn.onclick = () => {
-  window.location.href = "color-pick.html";
+  winEl.classList.add("hidden");
+  resetGame();
+  last = performance.now();
+  requestAnimationFrame(loop);
 };
 
 // ---- Spawn ----
